@@ -1,0 +1,416 @@
+:root{
+    --blueSapphire: #05668D;
+    --metallicSeaweed: #028090;
+    --persianGreen:#00A896;
+    --mountainMeadow: #02C39A;
+    --paleSpringBud: #F0F3BD;
+    --lightBlue: #6DD3CE;
+}
+*{
+    
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: var(--metallicSeaweed);
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(auto-fill,minmax(300px,1fr));
+
+}
+.gridContainer{
+    display:grid;
+    grid-template-areas:"top"
+    "main"
+    "footer"
+}
+/*NAVIGATION BAR MOBILE*/
+.topnav{
+    overflow:hidden;
+    background-color:var(--persianGreen);
+    position:relative;
+}
+.topnav #myLinks{
+    display:none;
+}
+
+.topnav a {
+    color:white;
+    padding: 1.5em 1.5em;
+    text-decoration: none;
+    font-size:17px;
+    display:block;
+}
+.topnav a.icon{
+    background: black;
+    display:block;
+    position:absolute;
+    right:0;
+    top:0;
+}
+.topnav a:hover{
+    background-color: var(--paleSpringBud);
+    color:black;
+}
+.active{
+    
+    color:white;
+}
+#current{
+    background: #6DD3CE;
+    color:#333;
+}
+.cvPicture{
+    height:150px;
+    width:auto;
+    border:1px solid #333;
+    margin-top:1em;
+    margin-left:.5em;
+    position: relative;
+}
+.myName{
+   color: var(--paleSpringBud);
+}
+.mainArticle{
+    grid-area: main;
+    background: var(--metallicSeaweed);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align:center;
+    height:70vh;
+}
+#footer{
+    grid-area:footer;
+    background: #02C39A;
+    height:8vh;
+}
+#footer i{
+    color:black;
+    font-size:2em;
+    
+}
+.rob2_mobile {
+    height:auto;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* CV MOBILE */
+.content{
+    grid-area: main;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 1px;
+    
+    
+}
+.educationContent{
+    grid-area:aside;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding:1px;    
+   
+}
+.modal {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.4rem;
+    width:80vw;
+    padding:1.3rem;
+    min-height:250px;
+    position:relative;
+    top:0%;
+    margin-left:4%;
+    background-color:#3E4E50;
+    border:solid 1px black;
+    border-radius:15px;
+   }
+   .modal .flex {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+   }
+
+   .btn-close{
+    background:none;
+    border:none;
+    cursor:pointer;
+   }
+   
+   .btn{
+    display: inline-block;
+    padding:0.8rem 1.4rem;
+    font-weight:700;
+    background-color:black;
+    color:white;
+    border-radius:5px;
+    text-align:center;
+    font-size:1em;
+   }
+   .btn-open{
+    margin-top: 0%;
+    margin-left: 30%;
+    position:relative;
+    cursor:pointer;
+    border:none;
+   }
+   .btn-close{
+    display:flex;
+    background: none;
+    font-size:1.5rem;
+    width:1em;
+    
+   }
+   /* STEN SAX PÅSE */
+   .gameContent{
+    display:flex;
+    flex-direction: column;
+   }
+   .gameTitle{
+    color: #E6E6EA;
+    text-align: center;
+   }
+   .Game button {
+    padding: .4em;
+    font-size: 1.3rem;
+    background:#333;
+    color: #F4F4F8;
+    border-radius:1em;
+    cursor:pointer;
+   }
+   .Game{
+    display:flex;
+    justify-content: space-evenly;
+   }
+   span{
+    font-size:1.5rem;
+   }
+   .hidden{
+    display:none;
+   }
+   .armyPic {
+    grid-area:top;
+    width: auto;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:5px;
+}
+.vdalapicture {
+    grid-area: top;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 1em;
+    border-radius: 5px;
+}
+.rockPaperImg{
+
+    width: 250px;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+.gameDescContainer{
+    text-align: center;
+}
+
+
+
+
+/* DESKTOP VERSION */
+@media (min-width:700px){
+    body{
+        margin:0;
+        padding: 0;
+    }
+    .gridContainer{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:min-content(repeat(3,1fr));
+        grid-template-areas:"top top"
+        "main aside"
+        "footer footer";
+    }
+    .header{
+        grid-area:top;
+        
+        
+        
+        
+    }
+    .mainArticle{
+        grid-area:main;
+        padding: .1rem;
+        font-size:1.3em;
+    }
+    #aside{
+        grid-area:aside;
+        
+        
+        
+    }
+    .rob2{
+        margin-left:5%;
+        width:350px;
+        height:auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .rob2_mobile{
+        display:none;
+    }
+    footer{
+        grid-area:footer;
+    }
+    /* Portfolio */
+    .rockPaperImg{
+
+        width: 400px;
+        height: auto;
+        border: solid 1px black;
+        border-radius: 5px;
+    }
+    .gameDescContainer{
+        text-align: center;
+    }
+
+    /* cvContent */
+    .cvContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:min-content(repeat(3,1fr));
+        grid-template-areas:"top top"
+        "main aside"
+        "footer footer";
+        gap: 5px;
+    }
+    .cvTitle{
+        text-align:center;
+    }
+    .imageContainer{
+        text-align:center;
+    }
+     .content{
+        grid-area: main;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        
+        
+    }
+    .educationContent{
+        grid-area:aside;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+       
+    }
+    .content:hover{
+        background: var(--lightBlue);
+    }
+    .educationContent:hover{
+        background:var(--lightBlue);
+    }
+    .vdalapicture {
+        grid-area: top;
+        width: 300px;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 1em;
+        border-radius: 5px;
+    }
+    .armyPic {
+        grid-area:top;
+        width: auto;
+        height: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius:5px;
+    }
+    #footer{
+        grid-area:footer;
+    }
+    /* MODUL */
+   .modal {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.4rem;
+    width:80vw;
+    padding:1.3rem;
+    min-height:250px;
+    position:relative;
+    top:0%;
+    margin-left:5%;
+    background-color:#3E4E50;
+    border:solid 1px black;
+    border-radius:15px;
+   }
+   .modal .flex {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+   }
+
+   .btn-close{
+    background:none;
+    border:none;
+    cursor:pointer;
+   }
+   
+   .btn{
+    /* display: inline-block; */
+    padding:0.8rem 1.4rem;
+    font-weight:700;
+    background-color:black;
+    color:white;
+    border-radius:5px;
+    text-align:center;
+    font-size:1em;
+   }
+   .btn-open{
+    grid-area:top;
+    position:relative;
+    margin-left:40%;
+    /* position:absolute; */
+    cursor:pointer;
+    border:none;
+   }
+   .btn-close{
+    display:flex;
+    background: none;
+    font-size:1.5rem;
+    width:1em;
+    
+   }
+   /* STEN SAX PÅSE */
+   .gameContent{
+    display:flex;
+    flex-direction: column;
+   }
+   .gameTitle{
+    color: #E6E6EA;
+    text-align: center;
+   }
+   .Game button {
+    padding: .4em;
+    font-size: 1.3rem;
+    background:#333;
+    color: #F4F4F8;
+    border-radius:1em;
+    cursor:pointer;
+   }
+   .Game{
+    display:flex;
+    justify-content: space-evenly;
+   }
+   span{
+    font-size:1.5rem;
+   }
+   .hidden{
+    display:none;
+   }
+}
+@media(max-width:700px){
+.rob2{
+    display:none;
+}
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>CV</title>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <nav>
+                <a href="./index.html" class="active">Home</a>
+                <div id="myLinks">
+                <a href="./about.html">Portfolio</a>
+                <a href="./cv.html" id="current">CV</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </nav>
+        </div>
+        <h1 class ="cvTitle">CV</h1>
+        <div class="imageContainer">
+        <img src = "./images/imgVdala.jpg" alt ="pic of robert at vdala" class="vdalapicture">
+        <img src="./images/imgHighguard.jpg" alt="pic of robert standing highGuard" class="armyPic">
+        </div>
+    </header>
+    <main class="cvContainer">
+        <!-- <button class="cvKnapp">My Resume</button> -->
+        <div class="content"></div>
+        <div class="educationContent"></div>
+
+        <footer id="footer">
+            <a href="https://github.com/Rohnson95"><i class="fa fa-github" id="git"></i></a>
+            <a href="https://www.linkedin.com/in/robert-johnson-4466101aa/"><i class="fa fa-linkedin-square"></i></a>
+        
+        </footer>   
+    </main>
+
+    <script src="./JavaScript/app.js"></script>
+    <script src="./JavaScript/resume.js"></script>
+</body>
+</html>

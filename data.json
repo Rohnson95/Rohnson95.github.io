@@ -1,0 +1,59 @@
+{
+    "mittCV":[
+        {
+            "name": "Försvarsmakten",
+            "occupation":"Gruppchef Pansarskytte",
+            "period": "07/2021-06/2022",
+            "desc": "Gruppchef för 4 pansarskyttesoldater"
+
+            
+        },
+        {
+            "name": "Citymail",
+            "occupation":"Brevbärare",
+            "period":"10/2019-04-2020",
+            "desc":"Brevutdelning och sortering av brev"
+        },
+        {
+            "name": "Västmanlands-Dala Nation",
+            "occupation":"Barchef",
+            "period":"05/2019-08/2019",
+            "desc": "Inköpare samt redovisande av alkoholförsäljning"
+        },
+        {
+            "name": "Västmanlands-Dala Nation",
+            "occupation":"Klubbmästare",
+            "period":"08/2018-04/2019",
+            "desc":"Chef för personal samt klubbverksamhet" 
+        },
+        {
+            "name": "MediaMarkt",
+            "occupation":"Försäljare",
+            "period":"06/2015-10/2015",
+            "desc":"Vitvaruförsäljning samt kassaarbete"
+        }
+    ],
+    "education":[
+        {
+            "name": ".NET Fullstackutvecklare",
+            "period": "2022-2024",
+            "desc": "Studerar för att bli fullstackutvecklare" 
+            
+        },
+        {
+            "name": "Värnplikt, Skyttegruppchef",
+            "period": "2021 - 2022",
+            "desc": "Utbildad i ledarskap och diverse system inom militären"
+        },
+        {
+            "name": "Ansvarig alkoholservering AAS",
+            "period": "2018",
+            "desc": "Utbildning i konflikthantering samt ansvar för servering under alkohollagen"
+        },
+        {
+            "name": "MediaMarkt",
+            "period": "2015",
+            "desc": "Internutbildning inom försäljning, kundkontakt och diverse produkter"
+        }
+    ]
+}

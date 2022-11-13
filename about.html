@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="gridContainer">
+    <header class="header">
+    <div class="topnav">
+        <nav>
+            <a href="./index.html" class="active">Home</a>
+            <div id="myLinks">
+                <a href="./about.html" id="current">Portfolio</a>
+                <a href="./cv.html">CV</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        
+    </div>
+    <img src="./images/CV-bild.jpg" height="10" width="10" class="cvPicture" alt="picture of Robert">
+    <h2 class="myName">Robert Johnson</h2>
+
+    <div class="scriptie">
+        <section class="modal hidden">
+            <button class="btn-close">X</button>
+            <div class="gameContent">
+                <h1 class="gameTitle">Sten, Sax, Påse</h1>
+                <div class="Game">
+                    <button class ="Rock">Rock</button>
+                    <button class = "Paper">Paper</button>
+                    <button class ="Scissors">Scissors</button>
+                    <button class="reset">Reset</button>
+                </div>
+                <h3 class = "resultText">Resultat: </h3>
+                    User: <span class="result-score" data-your-score>0</span>
+                    <br>
+                    Computer:<span class="result-score" data-computer-score>0</span>
+                
+                
+            </div>
+        </section>
+        <div class="overlay hidden"></div>
+        <button class="btn btn-open">Klicka Mig!</button>
+    </div>
+    </header>
+    <main>
+        <article class="mainArticle">
+            <div class="gameDescContainer">
+                <h3 class="portfolio title">Sten,Sax Påse</h3>
+                <img src="./images/rockpaperscissors.png" alt="rockpaperscissors game" class="rockPaperImg">
+                <h4>Ovanför är en representation av spelet sten,sax,påse som jag skapat under en codejam workshop</h4>
+                <p>Nedan kan du se en liten knapp du kan trycka på för att testa spelet.</p>
+                <p>Länk till Repot: <a href="https://github.com/Rohnson95/RockPaperScissors" target="_blank">Rock,Paper,Scissors</a></p>
+            </div>
+        </article>
+ 
+    </main> 
+    <footer id="footer">
+        <a href="https://github.com/Rohnson95"><i class="fa fa-github" id="git"></i></a>
+        <a href="https://www.linkedin.com/in/robert-johnson-4466101aa/"><i class="fa fa-linkedin-square"></i></a>
+    
+    </footer> 
+    </div>
+    <script src="./JavaScript/app.js"></script>
+    <script src="./JavaScript/game.js"></script>
+</body>
+</html>
